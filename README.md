@@ -1,45 +1,49 @@
 # Hi, I'm DaftKen
 
-**Building focused, testable tools for AI-assisted workflows and everyday engineering.**
+**Building practical tools for everyday work, focused diagnostics, and playful interactions.**
 
-My background is in Android and Flutter. Today, I work on reusable agent workflows, local-first utilities, and small interactive products—from the first runnable path through verification and honest documentation of the limits.
+My background is in Android and Flutter. Today, I build local-first macOS utilities, offline web tools, desktop companions, and reusable workflows. I care about the full path from a real problem to a runnable result, with clear setup instructions and honest limits.
 
 ## Selected work
 
-### [skill-adapter](https://github.com/hellowmq/skill-adapter) · AI agent tooling
+### [Keyboard Hajimi Groove](https://github.com/hellowmq/keyboard-hajimi-groove) · Shortcut audio for macOS
 
-Maintaining the same skill across coding tools creates repetitive work. This Python converter turns skill packages, slash commands, and rules into tool-specific artifacts for ecosystems including CodeBuddy, Claude Code, Cursor, and MCP.
+A macOS menu-bar app that gives copy, paste, undo, save, find, and function keys musical feedback using local audio you provide. Ordinary typing stays quiet, and a local segment editor helps prepare and tune clips.
 
-[Explore the conversion examples](https://github.com/hellowmq/skill-adapter/blob/HEAD/skills/skill-adapter/references/example.md)
+The repository currently provides source code rather than a signed app bundle. Audio is not included; users must supply files they have the right to use.
 
-### [pet-apps](https://github.com/hellowmq/pet-apps) · Desktop pets
+[中文使用说明](https://github.com/hellowmq/keyboard-hajimi-groove/blob/main/README.zh-CN.md)
 
-An Electron desktop-pet monorepo with two original characters, direct manipulation, tray controls, and an embeddable `createPetRuntime`. The README includes renderer-only previews and separates source builds from distributable installers.
+### [FocusTrace](https://github.com/hellowmq/FocusTrace) · macOS input diagnostics
 
-### [MCR Mahjong Calculator](https://github.com/hellowmq/mcr-mahjong-calculator) · Interactive web tool
+A Swift command-line tool for investigating interrupted typing and unexpected focus changes. Its listen-only event tap correlates keyboard, pointer, and frontmost-app events without blocking or modifying input.
+
+Its automated verification uses synthetic timelines to test the documented rules; those suite results do not establish real-world accuracy.
+
+[中文排查指南](https://github.com/hellowmq/FocusTrace/blob/master/README.zh-CN.md) · [Verification report](https://github.com/hellowmq/FocusTrace/blob/master/docs/verification-report.md)
+
+### [MCR Mahjong Calculator](https://github.com/hellowmq/mcr-mahjong-calculator) · Offline scoring tool
 
 A mobile-first, offline-capable calculator and 81-pattern reference for Mahjong Competition Rules. It uses a self-made SVG tile set and needs no account, backend, database, or runtime API.
 
 [Try the live calculator](https://guobiao-mahjong-calculator.firehorsek.chatgpt.site/)
 
-### [emoji-to-pet](https://github.com/hellowmq/emoji-to-pet) · Reusable workflow
+### [pet-apps](https://github.com/hellowmq/pet-apps) · Desktop pets
 
-A resumable Codex workflow for turning an emoji or visual reference into an animated-pet candidate package. It prepares prompts and evidence records, while keeping image generation, asset rights, processing, and installation verification explicit.
+An Electron desktop-pet monorepo with two original characters, direct manipulation, tray controls, and an embeddable `createPetRuntime`. The README includes renderer-only previews and separates source builds from distributable installers.
 
-### [FocusTrace](https://github.com/hellowmq/FocusTrace) · macOS diagnostics
+### [emoji-to-pet](https://github.com/hellowmq/emoji-to-pet) · Reusable creation workflow
 
-A Swift command-line tool for investigating interrupted typing and unexpected focus changes. It correlates keyboard, pointer, and foreground-app events using a listen-only event tap.
+A resumable Codex workflow for turning an emoji or visual reference into an animated-pet candidate package. It prepares prompts and evidence records while keeping image generation, asset rights, processing, and installation verification explicit.
 
-[Read the verification report and limitations](https://github.com/hellowmq/FocusTrace/blob/HEAD/docs/verification-report.md) · Synthetic scenarios validate the detection rules; they do not establish real-world accuracy.
+## Other tools
 
-Also exploring: [Keyboard Hajimi Groove](https://github.com/hellowmq/keyboard-hajimi-groove), a macOS menu-bar experiment that maps workflow shortcuts to user-supplied local audio.
+[skill-adapter](https://github.com/hellowmq/skill-adapter) converts skill packages, slash commands, and rules into formats used by several coding tools, reducing repeated maintenance across tool-specific copies.
 
 ## What I'm working toward
 
-I'm interested in the full path from a real workflow problem to a useful system: understanding the constraints, building a focused solution, evaluating its behavior, and learning from actual use. I try to distinguish what is runnable, what has been verified, and what still needs real-world evidence.
-
-**Let's compare notes on** agent skill interoperability, developer tools, and practical AI workflows. For project questions or reproducible bugs, open an issue in the relevant repository.
+I'm interested in software that earns its place in daily use: small tools that solve a concrete problem, explain what they need, and make their limits visible. For project questions or reproducible bugs, open an issue in the relevant repository.
 
 ---
 
-中文：从 Android / Flutter 开发出发，现在专注于可复用的 AI Agent 工作流、本地优先工具和小型互动产品；作品会明确区分可运行、已验证与尚待真实使用验证的部分。
+中文：我从 Android / Flutter 开发出发，现在主要做能解决日常问题的 macOS 本地工具、离线 Web 工具、桌面互动产品和可复用工作流。代表作品优先展示真实用途、首次运行路径与限制，并区分源码可构建、已验证和仍需真实使用检验的部分。
