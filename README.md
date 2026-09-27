@@ -32,6 +32,10 @@ A mobile-first, offline-capable calculator and 81-pattern reference for Mahjong 
 
 An Electron desktop-pet monorepo with two original characters, direct manipulation, tray controls, and an embeddable `createPetRuntime`. The README includes renderer-only previews and separates source builds from distributable installers.
 
+<img src="https://raw.githubusercontent.com/hellowmq/pet-apps/master/docs/media/tuanzi-canvas.gif" width="320" alt="团子在画布中活动的渲染预览">
+
+[View the repository](https://github.com/hellowmq/pet-apps)
+
 ### [emoji-to-pet](https://github.com/hellowmq/emoji-to-pet) · Reusable creation workflow
 
 A resumable Codex workflow for turning an emoji or visual reference into an animated-pet candidate package. It prepares prompts and evidence records while keeping image generation, asset rights, processing, and installation verification explicit.
