@@ -1,53 +1,42 @@
 # Hi, I'm DaftKen
 
-**Building practical tools for everyday work, focused diagnostics, and playful interactions.**
+**Practical macOS tools and playful desktop experiences.**
 
-My background is in Android and Flutter. Today, I build local-first macOS utilities, offline web tools, desktop companions, and reusable workflows. I care about the full path from a real problem to a runnable result, with clear setup instructions and honest limits.
+我开发解决日常问题的 macOS 工具与互动产品：让显示器更好用，让桌面更有趣，也让输入问题更容易排查。
+
+[个人主页 / Portfolio](https://tech.wenmq.cn/) · [体验 PetApp / Try PetApp](https://tech.wenmq.cn/petapp/)
+
+My background is in Android and Flutter. Today I build local utilities and interactive products, with an interest in reusable AI workflows. I care about useful results, clear setup, and evidence that matches the claims.
 
 ## Selected work
 
-### [Keyboard Hajimi Groove](https://github.com/hellowmq/keyboard-hajimi-groove) · Shortcut audio for macOS
+### [DisplayDJ](https://github.com/hellowmq/displaydj) · Display control for macOS
 
-A macOS menu-bar app that gives copy, paste, undo, save, find, and function keys musical feedback using local audio you provide. Ordinary typing stays quiet, and a local segment editor helps prepare and tune clips.
+Control brightness, switch display modes, and disconnect or reconnect a display from the Mac desktop without unplugging it. Use the menu bar app or standalone CLI; the local HTTP service is optional.
 
-The repository currently provides source code rather than a signed app bundle. Audio is not included; users must supply files they have the right to use.
+Apple Silicon ZIP and DMG downloads are available. Builds are ad-hoc signed and not notarized; hardware support varies by display, connection, and macOS version.
 
-[中文使用说明](https://github.com/hellowmq/keyboard-hajimi-groove/blob/main/README.zh-CN.md)
+[Download latest](https://github.com/hellowmq/displaydj/releases/latest) · [中文使用说明](https://github.com/hellowmq/displaydj/blob/master/README.zh-CN.md)
 
-### [FocusTrace](https://github.com/hellowmq/FocusTrace) · macOS input diagnostics
+### [PetApp](https://github.com/hellowmq/pet-apps) · Interactive desktop companions
 
-A Swift command-line tool for investigating interrupted typing and unexpected focus changes. Its listen-only event tap correlates keyboard, pointer, and frontmost-app events without blocking or modifying input.
-
-Its automated verification uses synthetic timelines to test the documented rules; those suite results do not establish real-world accuracy.
-
-[中文排查指南](https://github.com/hellowmq/FocusTrace/blob/master/README.zh-CN.md) · [Verification report](https://github.com/hellowmq/FocusTrace/blob/master/docs/verification-report.md)
-
-### [MCR Mahjong Calculator](https://github.com/hellowmq/mcr-mahjong-calculator) · Offline scoring tool
-
-A mobile-first, offline-capable calculator and 81-pattern reference for Mahjong Competition Rules. It uses a self-made SVG tile set and needs no account, backend, database, or runtime API.
-
-[Try the live calculator](https://guobiao-mahjong-calculator.firehorsek.chatgpt.site/)
-
-### [pet-apps](https://github.com/hellowmq/pet-apps) · Desktop pets
-
-An Electron desktop-pet monorepo with two original characters, direct manipulation, tray controls, and an embeddable `createPetRuntime`. The README includes renderer-only previews and separates source builds from distributable installers.
+Pet, feed, and play with Tuanzi and Roundhead Maodie in your browser. The Electron desktop app adds a floating pet, dragging, and tray controls; it currently runs from source.
 
 <img src="https://raw.githubusercontent.com/hellowmq/pet-apps/master/docs/media/tuanzi-canvas.gif" width="320" alt="团子在画布中活动的渲染预览">
 
-[View the repository](https://github.com/hellowmq/pet-apps)
+[Try the live demo](https://tech.wenmq.cn/petapp/) · [Run the desktop app](https://github.com/hellowmq/pet-apps#从源码运行桌面版)
 
-### [emoji-to-pet](https://github.com/hellowmq/emoji-to-pet) · Reusable creation workflow
+### [FocusTrace](https://github.com/hellowmq/FocusTrace) · macOS input diagnostics
 
-A resumable Codex workflow for turning an emoji or visual reference into an animated-pet candidate package. It prepares prompts and evidence records while keeping image generation, asset rights, processing, and installation verification explicit.
+Investigate interrupted typing by correlating keyboard, pointer, and frontmost-app events. The Swift CLI listens without blocking or changing input. Synthetic tests verify the documented rules, not real-world detection accuracy.
 
-## Other tools
+[中文排查指南](https://github.com/hellowmq/FocusTrace/blob/master/README.zh-CN.md) · [Verification and limits](https://github.com/hellowmq/FocusTrace/blob/master/docs/verification-report.md)
 
-[skill-adapter](https://github.com/hellowmq/skill-adapter) converts skill packages, slash commands, and rules into formats used by several coding tools, reducing repeated maintenance across tool-specific copies.
+## More tools
 
-## What I'm working toward
+- **[Keyboard Hajimi Groove](https://github.com/hellowmq/keyboard-hajimi-groove)** — Musical feedback for macOS shortcuts. Build from source and bring your own permitted audio. [中文说明](https://github.com/hellowmq/keyboard-hajimi-groove/blob/main/README.zh-CN.md)
+- **[MCR Mahjong Calculator](https://github.com/hellowmq/mcr-mahjong-calculator)** — An offline-capable scoring tool and 81-pattern reference. [Try it online](https://guobiao-mahjong-calculator.firehorsek.chatgpt.site/)
+- **[emoji-to-pet](https://github.com/hellowmq/emoji-to-pet)** — A resumable workflow for animated-pet candidate packages, with explicit asset and verification steps.
+- **[skill-adapter](https://github.com/hellowmq/skill-adapter)** — Convert skill packages, commands, and rules into formats used by different coding tools.
 
-I'm interested in software that earns its place in daily use: small tools that solve a concrete problem, explain what they need, and make their limits visible. For project questions or reproducible bugs, open an issue in the relevant repository.
-
----
-
-中文：我从 Android / Flutter 开发出发，现在主要做能解决日常问题的 macOS 本地工具、离线 Web 工具、桌面互动产品和可复用工作流。代表作品优先展示真实用途、首次运行路径与限制，并区分源码可构建、已验证和仍需真实使用检验的部分。
+For project questions and reproducible bugs, open an issue in the relevant repository. I’m also exploring how these focused tools and AI workflows can support practical engineering delivery.
