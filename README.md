@@ -35,7 +35,7 @@ Investigate interrupted typing by correlating keyboard, pointer, and frontmost-a
 ## More tools
 
 - **[Keyboard Hajimi Groove](https://github.com/hellowmq/keyboard-hajimi-groove)** — Musical feedback for macOS shortcuts. Build from source and bring your own permitted audio. [中文说明](https://github.com/hellowmq/keyboard-hajimi-groove/blob/main/README.zh-CN.md)
-- **[MCR Mahjong Calculator](https://github.com/hellowmq/mcr-mahjong-calculator)** — An offline-capable scoring tool and 81-pattern reference. [Try it online](https://guobiao-mahjong-calculator.firehorsek.chatgpt.site/)
+- **[MCR Mahjong Calculator](https://github.com/hellowmq/mcr-mahjong-calculator)** — An offline-capable scoring tool and 81-pattern reference. [国内入口 / Mainland China](https://tech.wenmq.cn/mcr-mahjong-calculator/) · [ChatGPT 版备用 / ChatGPT backup](https://guobiao-mahjong-calculator.firehorsek.chatgpt.site/)
 - **[emoji-to-pet](https://github.com/hellowmq/emoji-to-pet)** — A resumable workflow for animated-pet candidate packages, with explicit asset and verification steps.
 - **[skill-adapter](https://github.com/hellowmq/skill-adapter)** — Convert skill packages, commands, and rules into formats used by different coding tools.
 
